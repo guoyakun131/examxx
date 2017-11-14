@@ -54,6 +54,7 @@
 		<property name="userService" ref="userService"/> </bean> -->
 	<bean id="securityFilter" class="com.extr.security.filter.AuthenticationFilter">
 		<!-- <property name="defaultTargetUrl" value="home" /> -->
+		<!-- 用户登陆时提交表单到这个权限控制 -->
 		<property name="filterProcessesUrl" value="/j_spring_security_check" />
 		<property name="authenticationManager" ref="authenticationManager" />
 

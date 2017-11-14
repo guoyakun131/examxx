@@ -13,6 +13,9 @@ public class KnowledgePoint {
 	private String fieldName;
 	private String memo;
 	private boolean removeable;
+	/**
+	 * 1:正常 0：废弃
+	 */
 	private int state;
 	
 	public boolean isRemoveable() {

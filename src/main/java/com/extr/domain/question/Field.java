@@ -8,6 +8,9 @@ public class Field {
 	private int fieldId;
 	private String fieldName;
 	private String memo;
+	/**
+	 * 1 正常 0 废弃
+	 */
 	private boolean state;
 	private boolean removeable;
 	public boolean isRemoveable() {

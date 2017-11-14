@@ -6,26 +6,66 @@ import java.util.List;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
+/**
+ * 用户
+ * @author 郭亚坤
+ *
+ */
 @XmlRootElement
 public class User implements Serializable {
 	private static final long serialVersionUID = 2866441053387084227L;
+	/**
+	 * 用户Id
+	 */
 	private int id;
+	/**
+	 * 用户账号
+	 */
 	private String username;
+	/**
+	 * 用户密码
+	 */
 	private String password;
+	/**
+	 * 真是姓名
+	 */
 	private String truename;
+	/**
+	 * 用户邮箱
+	 */
 	private String email;
+	/**
+	 * 激活状态：0-未激活 1-激活
+	 */
 	private String enabled;
+	/**
+	 * 用户手机号码
+	 */
 	private String phone;
+	/**
+	 * 创建时间
+	 */
 	private Date create_date;
 	private Date expire_date;
+	/**
+	 * 创建人的账号
+	 */
 	private String creator;
 	private int fieldId;
 	private String fieldName;
 	private Date lastLoginTime;
 	private Date loginTime;
-	
+	/**
+	 * 省份
+	 */
 	private String province;
+	/**
+	 * 单位
+	 */
 	private String company;
+	/**
+	 * 部门
+	 */
 	private String department;
 	
 	public Date getLoginTime() {

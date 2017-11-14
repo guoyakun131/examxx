@@ -1,11 +1,18 @@
 package com.extr.domain.question;
 
 import java.io.Serializable;
-
+/**
+ * 试题类型
+ * @author 郭亚坤
+ *
+ */
 public class QuestionType implements Serializable {
 
 	private static final long serialVersionUID = 8020837656124230840L;
 	private int id;
+	/**
+	 * 类型名称
+	 */
 	private String name;
 	private boolean subjective ;
 

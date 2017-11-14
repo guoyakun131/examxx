@@ -2,27 +2,69 @@ package com.extr.domain.exam;
 
 import java.io.Serializable;
 import java.util.Date;
-
+/**
+ * 试卷
+ * @author 郭亚坤
+ *
+ */
 public class ExamPaper implements Serializable {
 
 	private static final long serialVersionUID = -3878176097815638534L;
 	protected int id;
+	/**
+	 * 考试分类
+	 */
 	protected String name;
+	
 	protected String content;
+	/**
+	 * 试卷考试时间
+	 */
 	protected int duration;
+	/**
+	 * 及格分数
+	 */
 	protected int pass_point;
+	/**
+	 * 试卷总分
+	 */
 	protected float total_point;
+	/**
+	 * 创建时间
+	 */
 	protected Date create_time;
 	/**
 	 * 0:默认 1：发布
+	 * 试卷状态， 0未完成 -> 1已完成 -> 2已发布 -> 3通过审核 （已发布和通过审核的无法再修改）
 	 */
 	protected int status;
+	/**
+	 * 试卷介绍
+	 */
 	protected String summary;
+	/**
+	 * 是否所有用户可见，默认为0
+	 */
 	protected boolean is_visible;
+	/**
+	 * 班组Id
+	 */
 	protected int group_id;
+	/**
+	 * 为1表示为包含主观题的试卷，需阅卷
+	 */
 	protected boolean is_subjective;
+	/**
+	 * 试卷答案，用答题卡的结构保存
+	 */
 	protected String answer_sheet;
+	/**
+	 * 创建人的账号
+	 */
 	protected String creator;
+	/**
+	 * 0 真题 1 模拟 2 专家
+	 */
 	protected String paper_type;
 	protected int field_id;
 	protected int field_name;

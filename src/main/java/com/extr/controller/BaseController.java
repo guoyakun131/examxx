@@ -68,7 +68,8 @@ public class BaseController {
 
 		return "redirect:/admin/question-list";
 	}
-
+	
+	
 	/**
 	 * 判断不同角色返回的页面
 	 * @param model

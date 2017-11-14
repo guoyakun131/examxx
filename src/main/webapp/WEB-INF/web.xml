@@ -4,6 +4,7 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 	version="3.0">
 	<display-name></display-name>
+	<!-- 编码过滤 -->
 	<filter>
 		<filter-name>characterEncodingFilter</filter-name>
 		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
@@ -16,6 +17,7 @@
 			<param-value>true</param-value>
 		</init-param>
 	</filter>
+	<!-- 权限管理配置 -->
 	<filter>
 		<filter-name>securityFilter</filter-name>
 		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
@@ -35,6 +37,7 @@
 		<dispatcher>FORWARD</dispatcher>
 		<dispatcher>INCLUDE</dispatcher>
 	</filter-mapping>
+	<!-- 配置spring 配置文件初始化 -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>/WEB-INF/spring/root-context.xml /WEB-INF/spring/security.xml /WEB-INF/spring/scheduler.xml</param-value>
@@ -47,6 +50,7 @@
 	</listener> -->
 	<!-- <listener> <listener-class>com.extr.listener.BaseListener</listener-class> 
 		</listener> -->
+		<!-- 验证码 -->
 	<servlet>
 		<servlet-name>Kaptcha</servlet-name>
 		<servlet-class>com.google.code.kaptcha.servlet.KaptchaServlet</servlet-class>

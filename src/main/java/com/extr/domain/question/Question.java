@@ -5,7 +5,11 @@ import java.util.Date;
 import java.util.List;
 
 import javax.xml.bind.annotation.XmlRootElement;
-
+/**
+ * 试题
+ * @author 郭亚坤
+ *
+ */
 @XmlRootElement
 public class Question implements Serializable {
 
@@ -13,13 +17,25 @@ public class Question implements Serializable {
 	private int id;
 	private String name;
 	private String content;
+	/**
+	 * 试题考试时间
+	 */
 	private int duration;
 	private float points;
+	/**
+	 * 试题可见性
+	 */
 	private boolean is_visible = true;
 	private Date create_time;
 	private String last_modify;
 	private String answer;
+	/**
+	 * 班组ID
+	 */
 	private int group_id;
+	/**
+	 * 题型
+	 */
 	private int question_type_id;
 	private int expose_times;
 	private int right_times;
@@ -32,6 +48,9 @@ public class Question implements Serializable {
 	private String questionTypeName;
 	private List<Integer> pointList;
 	private String referenceName;
+	/**
+	 * 创建者
+	 */
 	private String creator;
 	private String examingPoint;
 	private String keyword;

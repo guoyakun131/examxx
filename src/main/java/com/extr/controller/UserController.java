@@ -26,7 +26,11 @@ import com.extr.service.UserService;
 import com.extr.util.Page;
 import com.extr.util.PagingUtil;
 import com.extr.util.StandardPasswordEncoderForSha1;
-
+/**
+ * 用户Controller
+ * @author 郭亚坤
+ *
+ */
 @Controller
 public class UserController {
 

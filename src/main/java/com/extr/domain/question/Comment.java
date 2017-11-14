@@ -4,7 +4,11 @@ import java.io.Serializable;
 import java.util.Date;
 
 import javax.xml.bind.annotation.XmlRootElement;
-
+/**
+ * 用户评论
+ * @author 郭亚坤
+ *
+ */
 public class Comment implements Serializable  {
 	
 	private static final long serialVersionUID = 304471288989898758L;
